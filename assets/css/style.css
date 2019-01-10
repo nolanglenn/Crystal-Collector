@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    background: url('../images/ice-crystal-696667.jpg');
+    background-size: 100%;
+    background-repeat:no-repeat;
+    display: compact;
+}
+
+.randomNumber {
+    font-size: 6em;
+}
+
+.score {
+    font-size: 2em;
+}
