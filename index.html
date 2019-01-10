@@ -15,25 +15,29 @@
 
 <body>
     <div class="container">
-        <div class="jumbotron text-center">
-            <h1 class="display-4">Welcome to Crystal Chronicles</h1><br>
-            <p class="lead">You will be given a random number at the starts of the game.<br><br>
-                There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your
-                total score.<br><br>
-                You win the game by matching your total score to the random number. You lose the game if your total
-                score goes above the random number.<br><br>
-                The value of each crystal is hidden from you until you click on it.<br><br>
-                Each time the game starts, the game will change the values of each crystal.</p>
-            <hr class="my-1">
+        <div class="row">
+            <div class="jumbotron text-center">
+                <h1 class="display-4">Welcome to Crystal Chronicles</h1><br>
+                <p class="lead">You will be given a random number at the starts of the game.<br><br>
+                    There are four crystals below. By clicking on a crystal, you will add a specific amount of points to
+                    your
+                    total score.<br><br>
+                    You win the game by matching your total score to the random number. You lose the game if your total
+                    score goes above the random number.<br><br>
+                    The value of each crystal is hidden from you until you click on it.<br><br>
+                    Each time the game starts, the game will change the values of each crystal.</p>
+                <hr class="my-1">
+            </div>
         </div>
-        <div class="row mb-5 ml-1">
-            <div class="col-sm-4 card">
-                <div class="card-body text-center randomNumber">
-                    0
-                </div>
+        <div class="row">
+            <div class="card mb-3 ml-5" style="width: 18rem;">
+                <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item cardTitle">Goal:<br><span class="randomNumber">0</span></li>
+                    <li class="list-group-item cardTitle">Your total: <br><span class="score">0</span></li>
+                </ul>
             </div>
             <div class="col-sm-2">
-                <div class="card" style="width: 9rem;">
+                <div class="card ruby" style="width: 9rem;">
                     <img src="assets/images/ruby.png" class="card-img-top" alt="...">
                     <div class="card-body text-center">
                         <p class="card-text">Ruby</p>
@@ -41,7 +45,7 @@
                 </div>
             </div>
             <div class="col-sm-2">
-                <div class="card" style="width: 9rem;">
+                <div class="card diamond" style="width: 9rem;">
                     <img src="assets/images/diamond.png" class="card-img-top" alt="...">
                     <div class="card-body text-center">
                         <p class="card-text">Diamond</p>
@@ -49,7 +53,7 @@
                 </div>
             </div>
             <div class="col-sm-2">
-                <div class="card" style="width: 9rem;">
+                <div class="card topaz" style="width: 9rem;">
                     <img src="assets/images/topaz.png" class="card-img-top" alt="...">
                     <div class="card-body text-center">
                         <p class="card-text">Topaz</p>
@@ -57,7 +61,7 @@
                 </div>
             </div>
             <div class="col-sm-2">
-                <div class="card" style="width: 9rem;">
+                <div class="card emerald" style="width: 9rem;">
                     <img src="assets/images/emerald.png" class="card-img-top" alt="...">
                     <div class="card-body text-center">
                         <p class="card-text">Emerald</p>
@@ -68,15 +72,15 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="card">
-                    <div class="card-body score">
-                        Wins: 0
+                    <div class="card-body">
+                        Wins: <span class="wins">0</span>
                     </div>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="card">
-                    <div class="card-body score">
-                        Losses: 0
+                    <div class="card-body">
+                        Losses: <span class="losses">0</span>
                     </div>
                 </div>
             </div>
@@ -84,6 +88,8 @@
     </div>
 </body>
 
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
 <script src="assets/javascript/game.js"></script>
 
 </html>

@@ -7,9 +7,13 @@ body {
 }
 
 .randomNumber {
-    font-size: 6em;
+    font-size: 2em;
 }
 
-.score {
+.score, .wins, .losses {
+    font-size: 2em;
+}
+
+.cardTitle {
     font-size: 2em;
 }
