@@ -1,2 +1,2 @@
-# unit-4-game
+# Chrystal Collector
 Crystal Collector game built with jQuery
